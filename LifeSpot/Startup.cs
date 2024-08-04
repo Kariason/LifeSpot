@@ -80,6 +80,8 @@ namespace LifeSpot
                     var js = await File.ReadAllTextAsync(jsPath);
                     await context.Response.WriteAsync(js);
                 });
+
+           
             });
         }
     }
