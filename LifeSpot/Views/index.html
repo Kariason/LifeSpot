@@ -5,7 +5,20 @@
     <title>LifeSpot</title>
     <link href="Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script src="Static/JS/index.js"></script>
-    <script src="Static/JS/searchVideo.js"></script>
+
+    <script>
+        checkAge();
+
+        advertising();
+
+        handleSession()
+
+        sessionLog();
+
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
 </head>
 
 <body>
@@ -17,7 +30,8 @@
             <p>Покажем, что происходит прямо сейчас</p>
             <!--Строка поиска-->
             <div class="search_line">
-                <input type="search" oninput="filterContent()" placeholder="Search" size="50%" />
+                <input type="text" oninput="
+       filterContent( inputParseFunction )" size=50%>
             </div>
         </header>
 
